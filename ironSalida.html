@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron salida</title>
+    <link rel="stylesheet" href="css/agregarCatalogo.css">    
+    
+    
+</head>
+<body>
+    <h1 class="titulos1">REMISIONES IRON SALIDA</h1>
+    <form class="agregarC">        
+        <label class="titulos2">Nombre responsable</label>
+        <select class="seleccionar">
+            <option selected>seleccione un responsable</option>
+            <option value="1">Edward Lozano</option>
+            <option value="2">Jorge Martinez</option>
+            <option value="3">Patricia Castro</option>
+        </select>
+        <label class="titulos2">Numero de cinta</label>
+        <input type="text" class="llenar" placeholder="">
+        <label class="titulos2">Tipo de transporte</label>
+        <select class="seleccionar">
+            <option selected>seleccione el tipo de transporte</option>
+            <option value="1">3374-sin costo</option>
+            <option value="2">1105-Emergencia</option>            
+        </select>
+        <label class="titulos2">Destino</label>
+        <select class="seleccionar">
+            <option selected>seleccione el destino</option>
+            <option value="1">Bogota</option>
+            <option value="2">Cali</option>            
+        </select>
+        <label class="titulos2">Fecha de salida</label>
+        <div class="input-group" id="datetimepicker">
+            <input type="text" class="llenar" placeholder="">
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+        </div>
+        <label class="titulos2">Fecha de devolucion</label>
+        <div class="input-group" id="datetimepicker">
+            <input type="text" class="llenar" placeholder="">
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+        </div>
+        
+        <button type="button" class="agregar" type="submit">Enviar</button>
+        
+    </form>
+    <script type="text/javascript">
+        $(function(){
+            $("#datetimepicker").datetimepicker({});
+        })
+    </script>
+</body>
+</html>

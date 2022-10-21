@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agregar catalogo</title>
+    <link rel="stylesheet" href="css/agregarCatalogo.css">
+</head>
+
+<body>
+    <h1 class="titulos1">AGREGAR CATALOGO</h1>
+    <form class="agregarC">        
+        <label class="titulos2">NOMBRE</label>
+        <input type="text" class="llenar" placeholder="">
+        <label class="titulos2">IP</label>
+        <input type="text" class="deshabilitado" placeholder="" disabled>
+        <label class="titulos2">SERVIDOR</label>
+        <input type="text" class="deshabilitado" placeholder="" disabled>
+        <label class="titulos2">CICLO</label>
+        <select class="seleccionar">
+            <option selected>seleccione un ciclo</option>
+            <option value="1">Diario</option>
+            <option value="2">Semanal</option>
+            <option value="3">Mensual</option>
+        </select>
+        <label class="titulos2">CONSOLA</label>
+        <select class="seleccionar">
+            <option selected>seleccione la libreria</option>
+            <option value="1">Zona Franca</option>
+            <option value="2">Bogota2</option>
+            <option value="3">Tarjde01</option>
+            <option value="4">Suba</option>
+        </select>    
+        <label class="titulos2">PROGRAMA</label>
+        <select class="seleccionar">
+            <option selected>seleccione un programa</option>
+            <option value="1">Dataprotector</option>
+            <option value="2">Commvault</option>
+            <option value="3">Dpvware</option>
+        </select>
+        <label class="titulos2">SEMANA</label>
+        <select class="seleccionar">
+            <option selected>seleccione la semana</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <label class="titulos2">TECNOLOGIA</label>
+        <select class="seleccionar">
+            <option selected>seleccione la tecnologia</option>
+            <option value="1">LTO8</option>
+            <option value="2">LTO7</option>
+            <option value="3">LTO6</option>
+            <option value="4">LTO4</option>
+        </select>
+
+        <button type="button" class="agregar" type="submit">Agregar</button>
+    </form>
+</body>
+
+</html>
