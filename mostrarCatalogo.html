@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar catalogo</title>
+    <title>CONSULTAR</title>
     <link rel="stylesheet" href="css/agregarCatalogo.css">
     <script src="https://kit.fontawesome.com/403b08f700.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script/agregarCatalogo.js"></script>
-
 </head>
-
 <body>
     <h1 class="titulos1">AGREGAR CATALOGO</h1>
     <div class="redes-sociales">
@@ -21,20 +18,20 @@
     </div>
     <form class="agregarC">
         <label class="titulos2">NOMBRE</label>
-        <input type="text" class="seleccionar" id="nombreCatalogo"/>
+        Nombre: <input type="text" class="seleccionar" id="nombreCatalogo"/><br/>
         <label class="titulos2">IP</label>
-        <input type="text" class="seleccionar" id="ip"/>
+        IP: <input type="text" class="seleccionar" id="ip"/>
         <label class="titulos2">SERVIDOR</label>
-        <input type="text" class="seleccionar" id="nombreServidor"/>
+        Servidor: <input type="text" class="seleccionar" id="nombreServidor"/><br/>
         <label class="titulos2">CICLO</label>
-        <select id="ciclo" class="seleccionar">
+        Ciclo: <select id="ciclo" class="seleccionar"><br/>
             <option selected>seleccione un ciclo</option>
             <option value="1">Diario</option>
             <option value="2">Semanal</option>
             <option value="3">Mensual</option>
         </select>
         <label class="titulos2">CONSOLA</label>
-        <select id="consola" class="seleccionar">
+        Consola: <select id="consola" class="seleccionar"><br/>
             <option selected>seleccione la libreria</option>
             <option value="1">Zona Franca</option>
             <option value="2">Bogota2</option>
@@ -42,14 +39,14 @@
             <option value="4">Suba</option>
         </select>
         <label class="titulos2">PROGRAMA</label>
-        <select id="programa" class="seleccionar">
+        Programa: <select id="programa" class="seleccionar"><br/>
             <option selected>seleccione un programa</option>
             <option value="1">Dataprotector</option>
             <option value="2">Commvault</option>
             <option value="3">Dpvware</option>
         </select>
         <label class="titulos2">SEMANA</label>
-        <select id="semana" class="deshabilitado">
+        Semana: <select id="semana" class="deshabilitado"><br/>
             <option selected>seleccione la semana</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -57,17 +54,20 @@
             <option value="4">4</option>
         </select>
         <label class="titulos2">TECNOLOGIA</label>
-        <select id="tecnologia" class="seleccionar">
+        Tecnologia: <select id="tecnologia" class="seleccionar"><br/>
             <option selected>seleccione la tecnologia</option>
             <option value="1">LTO8</option>
             <option value="2">LTO7</option>
             <option value="3">LTO6</option>
             <option value="4">LTO4</option>
         </select>
-        <button onclick="guardar()" type="button" class="agregar" id="btn-abrir-popup">Agregar</button>
+        <br/>
+        <button onclick="getAll()" type="button" class="agregar" id="btn-abrir-popup">Agregar</button>
         <div class="btn_salir">
             <a class="fa-solid fa-arrow-right-from-bracket" id="btn-abrir-popupSalir"></a>  
         </div>
+
+        <div id="resultado"></div>
 
     </form>    
     <div class="overlay" id="overlaySalir">
@@ -112,5 +112,4 @@
     </script>
 
 </body>
-
 </html>
