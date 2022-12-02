@@ -160,8 +160,7 @@ nav ul li a span.rotate{
     position: absolute;
     left: 285px;
     cursor: pointer;
-    opacity: 0;
-    transition: all 00.3s linear;
+    opacity: 0;    
 }
 
 .btn_one i:hover{

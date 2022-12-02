@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body {
+    position: relative;    
+    background: url(../img/cintasBCSC.PNG) right no-repeat;
+    background-size: cover;    
+    height: 94vh;
+    width: 100%; 
+}
+
+.redes-sociales{
+    margin-top: 8px;
+    margin-right: 80px; 
+    text-align: right;
+}
+
+.redes-sociales img{
+    width: 240px;
+    margin: 0px 12px;    
+    border-radius: 50%;
+}
+
+.titulos1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;  
+    position: absolute;    
+    line-height: 60px;   
+    text-decoration: none;    
+    letter-spacing: 1px; 
+    margin-left: 950px;
+    
+}
+
+.mostrar{
+    position: fixed; 
+    display: block;    
+    height: 80%;
+    width: 690px;   
+    margin: 0px 100px; 
+}
+
+
+.titulos2 {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: inline-block;
+}
+
+.tablaCatalogos{       
+    border: 1px solid #ced4da;    
+    border-radius: .25rem; 
+    max-width: 600px;    
+}
+
+th{
+    padding: 10px;
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.222);  
+}
+
+tr{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.072);      
+    border-bottom: 1px solid  rgba(255,255,255,0.5);    
+    border: 1px solid #ced4da;   
+}
+
+tr:hover td{
+   background-color: 0 0 6px rgba(255,255,255,0.5);
+
+}
+
+.agregar{
+    border: none;
+    background: #d21826;    
+    color: white;
+    margin: 10px;
+    margin-left: 30px;
+    height: 6%;
+    width: 80px; 
+    cursor: pointer;
+    border-radius: .25rem; 
+}
+
+.agregar:hover{
+    background: rgba(210,24,38,0.9)
+}
+
+
+
+.btn_salir a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;    
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 00.3s linear;
+}
+.btn_salir{
+    margin-left: 70%;
+    margin-top: 60%;
+}
+
+.cerrar{
+    background: #215eac;
+    
+    
+}
+
+.cerrar img{
+    width: 200px;
+    margin: 0px 55px;    
+    border-radius: 50%;
+    
+}
+
+/*------------*/
+/*POPUP*/
+/*-----------*/
+
+.popup i{
+    color: #67a965;
+    font-size: 35px;
+    margin-top: 5px;       
+}
+
+.popup a{
+    text-decoration: none;
+}
+
+.popup #warning{
+    color: #fab005;
+}
+
+.overlay{
+    background: rgba(0,0,0,.3);
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.popup{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);  
+    border-bottom: 1px solid  rgba(255,255,255,0.5); 
+    text-align: center;
+    width: 15%;
+    opacity: 0;
+    transition: .3s ease all;
+    transform: scale(0.7);
+}
+
+.popup h2{
+    margin-top: 8px;
+    color: #787877;
+}
+
+.aceptar{
+    border: none;
+    background: #d21826;    
+    color: white;
+    margin: 10px; 
+    width: 90px; 
+    cursor: pointer;
+    border-radius: .25rem;
+}
+
+.aceptar:hover{
+    background: rgba(210,24,38,0.9)
+}
+
+/*------------*/
+/*ANIMACIONES*/
+/*-----------*/
+
+.popup.active {opacity: 1; transform: scale(1);}

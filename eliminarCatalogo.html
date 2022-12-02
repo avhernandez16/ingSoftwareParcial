@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELIMINAR CATALOGO</title>
+    <link rel="stylesheet" href="css/mostrar.css">
+    <script src="https://kit.fontawesome.com/403b08f700.js"></script>
+</head>
+
+<body>
+    <h1 class="titulos1">MOSTRAR CATALOGOS</h1>
+    <div class="redes-sociales">
+        <img src="img/logobcsc.png" alt="">
+    </div>
+
+    <div class="mostrar">
+        <table class="tablaCatalogos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>IP</th>
+                    <th>Servidor</th>
+                    <th>Ciclo</th>
+                    <th>Consola</th>
+                    <th>Programa</th>
+                    <th>Semana</th>
+                    <th>Tecnologia</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="data">
+
+            </tbody>
+        </table>
+        
+        
+    </div>
+    <div class="btn_salir">
+        <a class="fa-solid fa-arrow-right-from-bracket" id="btn-abrir-popupSalir"></a>
+    </div>
+    <div class="overlay" id="overlaySalir">
+        <div class="popup" id="popupSalir">
+            <div class="cerrar">
+                <img src="img/logobcsc.png" alt="">
+            </div>
+            <h2><i class="fa-solid fa-circle-exclamation" id="warning"></i> ¿Desea salir?</h2>
+            <a href="menu.html">
+                <button type="button" class="aceptar">Si</button>
+            </a>
+            <button type="button" class="aceptar" id="btncerrar-popupSalir">No</button>
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script/funciones.js"></script>
+    <script src="script/popup.js"></script>
+
+</body>
+
+</html>

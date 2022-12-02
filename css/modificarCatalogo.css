@@ -34,20 +34,67 @@ body {
     line-height: 60px;   
     text-decoration: none;    
     letter-spacing: 1px; 
-    margin-left: 950px;
+    margin-left: 60%;
     
 }
+
 #btnFormulario{
     margin-top: 20px;
+}
+
+.mostrar{
+    position: fixed; 
+    display: block;    
+    height: 80%;
+    width: 690px;   
+    margin: 0px 100px; 
+}
+
+.tablaCatalogos{       
+    border: 1px solid #ced4da;    
+    border-radius: .25rem; 
+    max-width: 600px;    
+}
+
+th{
+    padding: 10px;
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.222);  
+}
+
+tr{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.072);      
+    border-bottom: 1px solid  rgba(255,255,255,0.5);    
+    border: 1px solid #ced4da;   
+}
+
+tr:hover td{
+   background-color: 0 0 6px rgba(255,255,255,0.5);
+
 }
 
 .agregarC{
     position: fixed;    
     height: 80%;
     width: 690px;   
-    margin: 0px 1040px; 
+    margin: 0px 1300px; 
 }
 
+.modificar{
+    border: none;
+    background: #d21826;    
+    color: white;
+    margin: 20px;
+    margin-left: 300px;
+    height: 6%;
+    width: 100px; 
+    cursor: pointer;
+    border-radius: .25rem; 
+}
 
 .titulos2 {
     margin-top: 5px;
@@ -156,8 +203,8 @@ input:focus{
     border: none;
     background: #d21826;    
     color: white;
-    margin: 20px;
-    margin-left: 300px;
+    margin: 10px;
+    margin-left: 30px;
     height: 6%;
     width: 80px; 
     cursor: pointer;
@@ -168,16 +215,12 @@ input:focus{
     background: rgba(210,24,38,0.9)
 }
 
-.modificar{
-    border: none;
-    background: #d21826;    
-    color: white;
-    margin: 20px;
-    margin-left: 300px;
-    height: 6%;
-    width: 100px; 
-    cursor: pointer;
-    border-radius: .25rem; 
+.mostrar{
+    position: fixed; 
+    display: block;    
+    height: 80%;
+    width: 690px;   
+    margin: 0px 100px; 
 }
 
 ::-webkit-calendar-picker-indicator{
@@ -287,3 +330,4 @@ input:focus{
 /*-----------*/
 
 .popup.active {opacity: 1; transform: scale(1);}
+
